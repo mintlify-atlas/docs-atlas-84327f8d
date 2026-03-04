@@ -1,0 +1,157 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "Hatchet",
+  "projectDescription": "A distributed, fault-tolerant task queue and workflow orchestration platform built on PostgreSQL.",
+  "theme": "aspen",
+  "primaryColor": "#4415e3",
+  "lightColor": "#9c84e1",
+  "darkColor": "#050615",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "core-concepts"
+            ]
+          },
+          {
+            "group": "Installation & Deployment",
+            "pages": [
+              "deployment/local-development",
+              "deployment/docker-compose",
+              "deployment/kubernetes",
+              "deployment/cloud",
+              "deployment/configuration"
+            ]
+          },
+          {
+            "group": "SDKs",
+            "pages": [
+              "sdks/overview",
+              "sdks/typescript-sdk",
+              "sdks/python-sdk",
+              "sdks/go-sdk",
+              "sdks/ruby-sdk"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/tasks",
+              "features/workflows",
+              "features/dag-orchestration",
+              "features/durable-execution",
+              "features/concurrency-control",
+              "features/rate-limiting",
+              "features/scheduling",
+              "features/event-triggers",
+              "features/sticky-assignment",
+              "features/worker-affinity"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "operations/architecture",
+              "operations/monitoring",
+              "operations/logging",
+              "operations/alerting",
+              "operations/database-management",
+              "operations/scaling",
+              "operations/backup-restore"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/authentication",
+              "security/authorization",
+              "security/encryption",
+              "security/secrets-management"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/migration-from-celery",
+              "guides/migration-from-bullmq",
+              "guides/best-practices",
+              "guides/troubleshooting",
+              "guides/performance-tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "REST API",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/workflow-runs",
+              "api/tasks",
+              "api/events",
+              "api/webhooks",
+              "api/metrics"
+            ]
+          },
+          {
+            "group": "CLI Reference",
+            "pages": [
+              "cli/overview",
+              "cli/server",
+              "cli/workflow",
+              "cli/worker",
+              "cli/config"
+            ]
+          },
+          {
+            "group": "gRPC API",
+            "pages": [
+              "grpc/dispatcher",
+              "grpc/workflows",
+              "grpc/events"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Distributed task queue with PostgreSQL backend",
+    "DAG-based workflow orchestration",
+    "Durable execution with state persistence",
+    "Dynamic concurrency control and rate limiting",
+    "Cron scheduling and one-time task scheduling",
+    "Event-driven architecture with triggers and listeners",
+    "Real-time web dashboard with monitoring and alerting",
+    "Multi-language SDKs (TypeScript, Python, Go, Ruby)",
+    "Sticky assignment and worker affinity routing",
+    "Built-in observability with logs and metrics"
+  ],
+  "publicApiSurface": [
+    "hatchet.task() - Define tasks in Python SDK",
+    "hatchet.workflow() - Create workflows in Python SDK",
+    "hatchet.task() - Define tasks in TypeScript SDK",
+    "hatchet.workflow() - Create workflows in TypeScript SDK",
+    "factory.NewTask() - Create tasks in Go SDK",
+    "factory.NewWorkflow() - Create workflows in Go SDK",
+    "hatchet server start - Start Hatchet server via CLI",
+    "hatchet worker start - Start worker process via CLI",
+    "/api/v1/stable/tenants/{tenant}/workflow-runs/trigger - Trigger workflow via REST API",
+    "/api/v1/stable/workflow-runs/{workflow-run} - Get workflow run details via REST API",
+    "/api/v1/stable/tasks/{task} - Get task details via REST API",
+    "Dispatcher.Listen - Subscribe to tasks via gRPC",
+    "WorkflowService.TriggerWorkflow - Trigger workflows via gRPC",
+    "ConcurrencyExpression - Configure concurrency limits",
+    "RateLimit - Configure rate limiting",
+    "StickyStrategy - Configure worker affinity"
+  ]
+}
